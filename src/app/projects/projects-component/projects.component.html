@@ -1,0 +1,11 @@
+<app-header></app-header>
+<h3>My Projects</h3>
+<br />
+<div class="wrapper" *ngFor="let project of projects">
+  <p>Project id: {{ project.id }} Project name: {{ project.name }} Project description: {{ project.description }}</p>
+  <div class="details-wrapper">
+    <label>To Project Details: </label>
+    <a href="{{ project.url }}">{{ project.url }}</a>
+  </div>
+  <hr />
+</div>
